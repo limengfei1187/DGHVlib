@@ -1,6 +1,11 @@
 # DGHVlib
 This repository is about the implementation of homomorphic encryption scheme (DGHV).
 
+可以自己编译，进入src文件夹里打开terminal 
+          make
+就能够编译成静态链接库DGHVlib.a 该同态加密库是在ubuntu环境下完成的。如果使用尽量在linux环境下使用，因为代码中
+unsigned long int 类型在windows 占4个字节， linux下占8个字节，而gmp该精度运算库的每个limb占8个字节。在windows
+下编译可能会出现结果错误。
 
 
 
